@@ -37,12 +37,13 @@ $(document).ready(function(){
 	});
 
 		window.sr = ScrollReveal();
+sr.reveal('.navbar-brand', {duration: 1000});
 sr.reveal('.splash .header', {opacity: 0.2}, {reset:true, duration: 1000});
-sr.reveal('.navbar-brand', {reset:true, duration: 1000});
-sr.reveal('.description', {duration: 2000});
+sr.reveal('.splash .navbar-brand', {reset:true, duration: 1000});
+sr.reveal('.description', {reset:true, duration: 2000});
 
-sr.reveal('.projects .header', {duration: 2000});
-sr.reveal('.project-item', {duration: 2000});
+sr.reveal('.projects .header', {duration: 2000}, 50);
+sr.reveal('.project-item', {duration: 2000}, 50);
 
 
 });
