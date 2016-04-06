@@ -5,8 +5,14 @@ body {
 	font-size: 15px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
 	font-family: 'Poppins', sans-serif;
+    font-weight: 30%;
+    letter-spacing: 1.5px;
+}
+
+ h4, h5 {
+  font-family: 'Poppins', sans-serif;
     font-weight: 30%;
     letter-spacing: 1.5px;
 }
@@ -116,10 +122,10 @@ transition-duration: 0.5s;
 	justify-content: center;
 	flex-direction: column;
 }
-.about .content {
+.about .about-description .text {
 	background-color:;
-	padding: ;
-	border-radius: ;
+	padding-right: 80px;
+	
 }
 .about  h1 {
 	font-weight: 900;

@@ -67,6 +67,8 @@ sr.reveal('.splash .header', {opacity: 0.2, duration: 500});
 sr.reveal('.splash .navbar-br', {duration: 1000});
 sr.reveal('.description', { duration: 1000});
 
+sr.reveal('.about .about-description', {reset: true, duration: 1000}, 50);
+
 sr.reveal('.portfolio-item', {reset: true, duration: 2000}, 50);
 
 
