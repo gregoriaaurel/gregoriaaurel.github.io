@@ -60,6 +60,15 @@ $(function() {
      });
 
 
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$from = 'Demo Contact Form'; 
+$to = 'gregoriaaurel@hotmail.com'; 
+$subject = 'Message from Contact Demo ';
+ 
+$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+
 
 		window.sr = ScrollReveal();
 sr.reveal('.navbar-brand');
@@ -69,7 +78,7 @@ sr.reveal('.description', { duration: 1000});
 
 sr.reveal('.about .about-description', {reset: true, duration: 1000}, 50);
 sr.reveal('.about .additional', {reset: true, duration: 1000}, 50);
-sr.reveal('.portfolio-item', {reset: true, duration: 2000}, 50);
+sr.reveal('.portfolio-item', {reset: true, duration: 1000}, 50);
 
 
 });

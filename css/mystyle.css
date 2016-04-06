@@ -224,6 +224,7 @@ span.text-content {
 .portfolio-item {
   margin: 0 0;
   right: 0;
+  padding-bottom: 20px;
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
@@ -353,8 +354,8 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content p.item-intro {
   margin: 20px 0 30px;
   font-family: "Poppins";
-  font-style: italic;
-  font-size: 16px;
+  font-style:;
+  font-size: 14px;
 }
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 30px;

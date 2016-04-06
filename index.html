@@ -22,6 +22,22 @@
 		<link href="css/mystyle.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Gentium+Basic' rel='stylesheet' type='text/css'>
 
+        <script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.5073509,-0.12775829999998223),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
 
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -135,10 +151,11 @@
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                             Typoetry
+                             L'Occitane Christmas
+                             <br>Roadshow 2014
                             </div>
                         </div>
-                         <img src="images/portfolio/typoetry/1.jpg" class="img-responsive" alt="">
+                         <img src="images/portfolio/roadshow/cover.jpg" class="img-responsive" alt="">
                     </a>                    
                 </div>
 
@@ -149,7 +166,7 @@
                                 Bluebell & Bluejay
                             </div>
                         </div>
-                        <img src="images/portfolio/bluebellbluejay/7.jpg" class="img-responsive" alt="">
+                        <img src="images/portfolio/blue/7.jpg" class="img-responsive" alt="">
                     </a>
                     </div>
                 </div>
@@ -171,10 +188,10 @@
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                Local Delights
+                                Typoetry
                             </div>
                         </div>
-                       <img src="images/portfolio/localdelights/2.jpg" class="img-responsive" alt="">
+                       <img src="images/portfolio/typoetry/1.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
 
@@ -188,6 +205,43 @@
                         <img src="images/portfolio/filmbooklet/1.gif" class="img-responsive" alt="">
                     </a>
                 </div>
+                </div>
+
+                <div class="row">
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            Local Delights</div>
+                        </div>
+                        <img src="images/portfolio/localdelights/1.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                THE PRIVE GROUP Collaterals
+                            </div>
+                        </div>
+                       <img src="images/portfolio/edm/1.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                 <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                Typospec
+                            </div>
+                        </div>
+                       <img src="images/portfolio/typospec/4.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -244,10 +298,16 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Typoetry</h2>
-                            <img class="img-responsive img-centered" src="images/portfolio/typoetry/typo1.gif" width="750" alt="">
-                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                            <h2>L'OCCITANE Holiday Roadshow 2014</h2>
+                            <p class="item-intro text-muted"></p>
+                            <img class="img-responsive img-centered" src="images/portfolio/roadshow/1.jpg" width="750" alt="">
+                            <p>L'OCCITANE Holiday Roadshow at Takashimaya Dept. Store, B1, Interior Dept. 
+                            <br>from 14 - 20 November 2014</p>
+                            <img class="img-responsive img-centered" src="images/portfolio/roadshow/2.jpg" width="750" alt="">
+                            <p>Window display, cannopy, panels, panel strips, and in-store and roadshow signages</p>
+                             <img class="img-responsive img-centered" src="images/portfolio/roadshow/3.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/roadshow/4.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/roadshow/5.jpg" width="750" alt="">
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -270,11 +330,25 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <h2>Bluebell & Bluejay</h2>
+                            <p><i>"Release the Odor, Reveal the Candor"</i></p>
+                            
+
+                            <img class="img-responsive img-centered" src="images/portfolio/blue/2.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/blue/1.jpg" width="750" alt="">
+                             
+                             <img class="img-responsive img-centered" src="images/portfolio/blue/3.jpg" width="750" alt="">
+                            <img class="img-responsive img-centered" src="images/portfolio/blue/8.jpg" width="750" alt="">
+
+                            <p>This project is to develop and design a 3D packaging — with distinctive branding, graphics and copywriting —
+for a range of extraordinary fictional product: Truth Serum.
+ <br>
+<br>BLUEJAY & BLUEBELL comes from bluebell flower and bluejay bird which represents the truth. The blue color scheme that is being used is to represent the "blue on blue" that is shown by a bluejay against the sky. It means a double vision and double clarity — purity of soul, truth of the heart, clarity of thought. </p>
+                             <img class="img-responsive img-centered" src="images/portfolio/blue/4.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/blue/5.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/blue/6.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/blue/7.jpg" width="750" alt="">
+                            
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -297,12 +371,24 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            <h2>Monotype // Project Uplift</h2>
+                            <p class="item-intro text-muted"></p>
+                            <img class="img-responsive img-centered" src="images/portfolio/monotype/1.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/monotype/2.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/monotype/3.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/monotype/4.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/monotype/5.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/monotype/6.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/monotype/7.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/monotype/8.jpg" width="750" alt="">
+                             <video width="750" controls>
+                        <source src="images/portfolio/monotype/9.mp4" type="video/mp4">
+                        </video><br>
+                        <br>
+                         <video width="750" controls>
+                        <source src="images/portfolio/monotype/10.mp4" type="video/mp4">
+                        </video><br>
+                            <br><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
@@ -324,11 +410,25 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <h2>Typoetry</h2>
+                            <p><i>Typoetry</i>, a portmanteau word, is an exploration and expression of typeface by interpreting a poem.
+ 
+<br>The typeface is designed through transformation based on the moods and characters of the poem; Daffodils.
+All of the letters in the typeface are hand-drawn and manually colored using color pencil and watercolor.</p>
+                            
+                            <img class="img-responsive img-centered" src="images/portfolio/typoetry/typo1.gif" width="750" alt="">
+                            <img class="img-responsive img-centered" src="images/portfolio/typoetry/1.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typoetry/4.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typoetry/5.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typoetry/6.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typoetry/7.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typoetry/33.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typoetry/20.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typoetry/35.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typoetry/29.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typoetry/36.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typoetry/30.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typoetry/37.jpg" width="750" alt="">
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -351,11 +451,11 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <h2>Film Booklet // Fantastic Mr. Fox</h2>
+                            <img class="img-responsive img-centered" src="images/portfolio/filmbooklet/1.gif" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/filmbooklet/2.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/filmbooklet/3.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/filmbooklet/4.jpg" width="750" alt="">
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -364,10 +464,71 @@
         </div>
     </div>
 
+    <!-- Portfolio Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Local Delights</h2>
+                            <p>Local Delights is a project that starts with a typewalk, which is to explore the realm of found typography in Singapore.
+The purpose is to spot and take shots of various typography in Singapore.
+<br> I compiled the photographs into a
+booklet that is placed in a handmade folio.</p>
+                            <p class="item-intro text-muted"></p>
+                            <img class="img-responsive img-centered" src="images/portfolio/localdelights/1.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/localdelights/2.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/localdelights/3.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/localdelights/4.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/localdelights/5.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/localdelights/7.jpg" width="750" alt="">
+                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Portfolio Modal 8 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>THE PRIVE GROUP Collaterals</h2>
+                            <p>EDM, Tentcard, Poster</p>
+                            
+                            <img class="img-responsive img-centered" src="images/portfolio/edm/1.jpg" width="750" alt="">
+                            <img class="img-responsive img-centered" src="images/portfolio/edm/2.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/edm/3.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/edm/4.jpg" width="750" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Portfolio Modal 9 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -379,216 +540,22 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <!-- Project Details Go Here -->
+                            <h2>Typospec</h2>
+                            <img class="img-responsive img-centered" src="images/portfolio/typospec/1.gif" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typospec/2.jpg" width="750" alt="">
+                             <img class="img-responsive img-centered" src="images/portfolio/typospec/3.jpg" width="750" alt="">
+                              <img class="img-responsive img-centered" src="images/portfolio/typospec/5.jpg" width="750" alt="">
+                                 <img class="img-responsive img-centered" src="images/portfolio/typospec/4.jpg" width="750" alt="">
+                                    <img class="img-responsive img-centered" src="images/portfolio/typospec/7.jpg" width="750" alt="">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
 
 
@@ -717,13 +684,53 @@
                     <h3 class="section-heading">Contact</h3>
                     <center><div class="hline"></div></center>
                 </div>
-                <div class="col-md-8">
-                    <img src="http://placehold.it/650x450" alt="this is my location" class="img-responsive">
-                </div>
-                <div class="col-md-4">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                <br>
+                <br>
+                <div class="row">
+
+
+              <div class="col-md-6">
+<center><br>
+                    <div id="googleMap" style="width:450px;height:380px;"></center></div>
+
+            
+<div class="col-md-6 text-left">
+           <h4> Write to me</h4>
+                <font size="2">For job offers, freelance work, projects, collaborations, speaking, questions or jokes, please email </font><h5>gregoriaaurel@hotmail.com</h5> <font size="2">(or fill out the form below).</font>
+
+                <br>
+                <br>
+
+                <form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="form-group">
+
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="Message" placeholder="Message"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <! Will be used to display an alert to the user>
+        </div>
+    </div>
+</form>
+ 
+
                 </div>
             </div>
         </div>
