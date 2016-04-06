@@ -1,5 +1,5 @@
 body {
-	background-color: #f4f0e6;
+	background-color: #e5e2e2;
 	color: #000;
 	font-family: 'Cutive Mono';
 	font-size: 15px;
@@ -17,14 +17,14 @@ h1, h2, h3, h4 {
 
 
 .hline { 
-    width:100%; 
     height:2px; 
     background: #1800ff;
-    max-width: 150px;
+    max-width: 80px;
     text-align: center;
  }
 
 .container .projects {
+  background-color: "#f2f2f2";
   font-family: 'Poppins', sans-serif;
     font-weight: 300;
     letter-spacing: 1.5px;
@@ -34,11 +34,11 @@ h1, h2, h3, h4 {
 	margin-bottom: 0px;
 	border-radius: 0px;
 	margin-top: 0px;
-  padding-top: 15px;
+  padding: 5px;
 }
 
 .navbar {
-transition-duration: 1s;
+transition-duration: 0.5s;
 }
 
 .navbar-nav a {
@@ -106,7 +106,7 @@ transition-duration: 1s;
 /*About Section*/
 .about {
 	min-height: 100vh;
-	background-image: url('https://images.unsplash.com/photo-1421987392252-38a07781c07e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ade84af3d710a25c10c285823badecfe');
+	background-color: ;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -117,18 +117,18 @@ transition-duration: 1s;
 	flex-direction: column;
 }
 .about .content {
-	background-color: rgba(62, 78, 68, 0.8);
-	padding: 20px 60px 45px;
-	border-radius: 30px;
+	background-color:;
+	padding: ;
+	border-radius: ;
 }
 .about  h1 {
 	font-weight: 900;
 	font-size: 3.2em;
 	text-transform: uppercase;
-	color: rgba(225, 226, 220, 1.00);
+	color: #000;
 }
 .about p {
-	color: rgba(225, 226, 220, 1.00);
+	color: #000;
 }
 
 ul.img-list {
@@ -201,14 +201,19 @@ span.text-content {
 
 #portfolio 
 
+.portfolio {
+  background-image: url('../images/background.gif');
+  background-color:#f2f2f2;
+}
+
 .portfolio-item {
-  margin: 0 0 15px;
+  margin: 0 0;
   right: 0;
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
-  max-width: 400px;
+  
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -249,7 +254,7 @@ span.text-content {
   margin: 0 auto;
   background-color: white;
   text-align: center;
-  padding: 25px;
+  padding: 5px;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;

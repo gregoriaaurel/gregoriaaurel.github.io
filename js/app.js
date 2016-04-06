@@ -14,7 +14,7 @@ $(document).ready(function(){
 		event.preventDefault();
 		var goTop = $(".about").offset().top;
 		 console.log($(".about").offset().top );
-		$("html, body").animate({scrollTop:goTop}, 1000, "easeInOutQuart");
+		$("html, body").animate({scrollTop:goTop}, 600, "easeInOutQuart");
 
 	});
 
@@ -65,10 +65,9 @@ $(function() {
 sr.reveal('.navbar-brand');
 sr.reveal('.splash .header', {opacity: 0.2, duration: 500});
 sr.reveal('.splash .navbar-br', {duration: 1000});
-sr.reveal('.description', { duration: 2000});
+sr.reveal('.description', { duration: 1000});
 
-sr.reveal('.projects .header', {duration: 2000}, 50);
-sr.reveal('.project-item', {duration: 2000}, 50);
+sr.reveal('.portfolio-item', {reset: true, duration: 2000}, 50);
 
 
 });
