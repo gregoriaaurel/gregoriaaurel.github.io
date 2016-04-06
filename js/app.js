@@ -36,11 +36,36 @@ $(document).ready(function(){
 
 	});
 
+
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('.nav');
+   var offset = startchange.offset();
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('.navbar').css('background-color', '#fff');
+       } else {
+          $('.navbar').css('background-color', 'transparent');
+       }
+   });
+});
+
+
+$(function() {
+        $('#nav li a').click(function() {
+           $('#nav li').removeClass();
+           $($(this).attr('href')).addClass('active');
+        });
+     });
+
+
+
 		window.sr = ScrollReveal();
-sr.reveal('.navbar-brand', {duration: 1000});
-sr.reveal('.splash .header', {opacity: 0.2}, {reset:true, duration: 1000});
-sr.reveal('.splash .navbar-brand', {reset:true, duration: 1000});
-sr.reveal('.description', {reset:true, duration: 2000});
+sr.reveal('.navbar-brand');
+sr.reveal('.splash .header', {opacity: 0.2, duration: 500});
+sr.reveal('.splash .navbar-br', {duration: 1000});
+sr.reveal('.description', { duration: 2000});
 
 sr.reveal('.projects .header', {duration: 2000}, 50);
 sr.reveal('.project-item', {duration: 2000}, 50);

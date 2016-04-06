@@ -190,7 +190,6 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #2c3e50;
 }
 
 @media(max-width:767px) {
@@ -273,9 +272,6 @@ section.success a.active {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
-    color: #18bc9c;
-    background: #fff;
 }
 
 .floating-label-form-group {
